@@ -21,7 +21,7 @@ export default function IndexPage({ data }) {
       <SEO title="Home"/>
       <div>
         <h1>Abdul's Thoughts on Minimalism</h1>
-        <h4>{data.allMarkdownRemark.totalCount}</h4>
+        <h4>{data.allMarkdownRemark.totalCount} posts</h4>
         {
           data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
